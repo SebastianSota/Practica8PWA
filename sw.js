@@ -7,8 +7,8 @@ self.addEventListener('install', (event) => {
     const promiseCache = caches.open(STATIC_CACHE_NAME).then((cache) => {
         return cache.addAll(
             [
-                '/',
-                '/index.html',
+                './',
+                './index.html',
                 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css',
                 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js',
                 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css',
